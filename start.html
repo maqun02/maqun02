@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>马群的blog</title>
+    <link href="../images/touxiang.png" rel="icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>function A1() {
+        // console.log("1");
+        window.location.href = "../html/index.html";
+    }</script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(125deg,#2c3e50, #27ae60, #2980b9,#e74c3c,#8e448e);
+            background-size: 500%;  
+            animation: bgAnimation 15s linear infinite;
+        }
+
+        @keyframes bgAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        h2 {
+            color: rgb(150, 150, 150);
+            font-size: 90px;
+        }
+
+        h2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h2 span {
+            transition: 0.5s;
+        }
+
+        h2:hover span:nth-child(1) {
+            margin-right: 10px;
+        }
+
+        h2:hover span:nth-child(2) {
+            margin-left: 30px;
+        }
+
+        h2 span:nth-child(1)::after {
+            opacity: 0;
+            transition: 1s;
+        }
+
+        h2:hover span {
+            color: white;
+            text-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff,
+                0 0 80px #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2 onclick="A1()">
+        <span>春风不及 樱花未至</span><br>
+        <span>你未出现 美好初始</span><br>
+    </h2>
+</body>
+
+</html>
+<!-- 这个是纯CSS实现的
+文字彩虹跑马灯效果特效代码
+代码
+<style>
+.masked{
+text-align: center;
+background-image: -webkit-linear-gradient(left, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-background-size: 200% 100%;
+-webkit-animation: masked-animation 4s infinite linear
+}
+@-webkit-keyframes masked-animation {
+0%{ background-position: 0 0;}
+100% { background-position: -100% 0;
+}
+</style>
+<span class="masked">文字彩虹跑马灯效果特效代码</span> -->
