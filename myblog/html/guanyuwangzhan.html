@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马群的blog-关于网站</title>
+    <link href="../images/touxiang.png" rel="icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/guanyuwangzhan.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            
+        }
+        a{
+            text-decoration: none;
+            color: rgb(9, 9, 9);
+        }
+    </style>
+ 
+</head>
+
+<body style="overflow-x:hidden !important;">
+    <!-- 头部栏开始 -->
+    <header style="position:fixed; width: 100%; padding:0 40px ; z-index: 50;">
+        <!-- 博客blog -->
+        <a href="../html/start.html" class="logo">
+            博客blog
+        </a>
+        <!-- 导航栏 -->
+        <nav>  
+            <ul>
+                <li><a href="../html/index.html">首页</a></li>
+                <li><a href="../html/liuyanban.html">留言板</a></li>
+                <li>
+                    <a href="../html/guanyuwangzhan.html">关于网站</a>
+                    <ol>
+                        <li><a href="#img2">制作目的</a></li>
+                        <li><a href="#img3">制作过程</a></li>
+                        <li><a href="#img4">日后用途</a></li>
+                        <li><a href="#img5">特别鸣谢</a></li>
+                    </ol>
+                </li>
+                <li class="sousuo">
+                    <a href="../html/sousuo.html">搜索</a>
+                    <ol class="SS">
+                        <li><a href="#">搜站内</a></li>
+                        <li><a href="#">搜站外</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+        <!-- 用户栏 -->
+        <div class="yonghu">
+            <!-- <div class="nicheng">马群</div> -->
+            <!-- 头像 -->
+            <div class="touxiang5">
+                <img src="../images/touxiang02.png" width="50" height="50" />
+            </div>
+        </div>
+
+        
+    </header>
+    <!-- 头部栏结束 -->
+
+    <!-- 主体内容开始 -->
+    <div class="Body">
+        <div id="container">
+            <section id="img1" class="image1">
+                <div style="flex: 1;" class="sy">
+                    <h1>关于网站</h1>
+                    <h4>在这里记录了这个网站的全部<br>欢迎来探索</h4>
+                </div>
+                <div style="flex: 1;" class="flex">
+                    <a href="#img2" id="imga2" style="background-size:cover ; color: aliceblue;">制作目的</a>
+                    <a href="#img3" id="imga3" style="background-size:cover ; color: aliceblue;">制作过程</a>
+                    <a href="#img4" id="imga4" style="background-size:cover ; color: aliceblue;">日后用途</a>
+                    <a href="#img5" id="imga5" style="background-size:cover ; color: aliceblue;">特别鸣谢</a>
+                </div>
+            </section>
+            <section id="img2" class="image" style="background-position: center top;">Part1 制作目的</section>
+            <section class="content">网站的建站目的有三<br>第一是为了完成期末作业<br>第二是为了记录一下我的乱七八糟<br>第三是增加一下自己的编程经验也使自己和同学更加有兴趣学习编程</section>
+            <section id="img3" class="image">Part2 制作过程</section>
+            <section class="content">
+                <div>
+                    <div>step1:老师领进门</div>
+                    <div>step2:大量的看视频学习基础,逛网站学习布局</div>
+                    <div>step3:最终自己动手制作完成了这样一个个人博客</div>
+                </div>
+            </section>
+            <section id="img4" class="image">Part3 日后用途</section>
+            <section class="content">这个网站建立的初衷就是一个个人博客<br>为了记录一下我的乱七八糟<br>在今后我也会继续完善它<br>同时我的一些笔记和生活也会记录在此</section>
+            <section id="img5" class="image">Part4 特别鸣谢</section>
+            <section style="height: auto; display: flex;flex-direction: column;" class="content">
+                <h1>老师</h1>
+                <span>侯建峰</span>
+                <h1>哔哩哔哩</h1>
+                <span>up：黑马前端（pink老师）<br>up：山羊の前端小窝<br>up：断了木马牛的李淳罡<br>up：AEI至死不渝<br>up：鹅厂程序员<br>up：仵航<br>up：CrazyYu<br>up：卢一weirry<br>up：叫我凤凰Blanco<br>up：康文昌<br>up：前端老师<br>
+                    up：Kepler-9b<br>up：bulv_<br>up：程序白<br>up：Janey的极简分享<br>up：有鱼是只猫<br>up：编程界天花板<br>up：总监日记<br>up：艾恩小灰灰<br>up：sanyuan_三元<br>
+                </span>
+                <h1>gethub</h1>
+                <span>ylishu<br>Chien-W<br>ViolentAyang</span>
+                
+                <div style="margin-bottom: 40vh; margin-top: 40vh;"><h1>感谢马群的制作</h1></div>
+            </section>
+        </div>
+    </div>
+
+    
+    <!-- 回到顶部 -->
+    <div class="backtop">
+        <a href="#img1">回到顶部</a>
+    </div>
+    <script>
+        // 回到顶部
+        var backtop = document.querySelector('.backtop');
+        var nav = document.querySelector('#img2');
+        window.onscroll = function() {
+            if (window.scrollY > nav.offsetTop) {
+                backtop.style.display = 'block';
+            } else {
+                backtop.style.display = 'none';
+            }
+        };
+    </script>
+    <!-- 主体内容结束 -->
+    <!-- 底部开始 -->
+    <div class="footer" style="z-index:50 ;">
+        <p>个人博客 | 版权所有 马群 | 邮箱：maqun02@qq.com</p>
+    </div>
+     <!-- 底部结束 -->
+</body>
+
+</html>

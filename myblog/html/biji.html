@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马群的blog-笔记知识</title>
+    <link href="../images/touxiang.png" rel="icon">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(9, 9, 9);
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .body .xiaohezi{
+            height: 40vh;
+            width: 60vw;
+            margin: 5vh 0;
+            background-color: rgba(123, 123, 123, 0.504);
+            border-radius: 5vh;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .body .xiaohezi .zuocetupian{
+            height: 40vh;
+            width: 40vh;
+            border-radius: 5vh;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        .body .xiaohezi .zuocetupian img{
+            height: 40vh;
+            width: 40vh;
+            background-position: center;
+        }
+
+        .body .xiaohezi .youceneirong{
+           text-align: center;
+           margin-top: 10vh;
+           margin-left: 20vh;
+        }
+
+        .backtop{
+    position: fixed;
+    bottom: 5vh;
+    right: 5vh;
+    width: 8vh;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 10%;
+    text-align: center;
+    line-height: 4vh;
+    cursor: pointer;
+    display: none;
+}
+    </style>
+</head>
+
+<body id="top">
+    <script src="../js/javasp.js"></script>
+    <!-- 头部栏开始 -->
+    <header>
+        <!-- 博客blog -->
+        <a href="../html/start.html" class="logo">
+            博客blog
+        </a>
+        <!-- 导航栏 -->
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">首页</a></li>
+                <li><a href="../html/liuyanban.html">留言板</a></li>
+                <li>
+                    <a href="../html/guanyuwangzhan.html">关于网站</a>
+                    <ol>
+                        <li><a href="../html/guanyuwangzhan.html">制作目的</a></li>
+                        <li><a href="../html/guanyuwangzhan.html">制作过程</a></li>
+                        <li><a href="../html/guanyuwangzhan.html">日后用途</a></li>
+                        <li><a href="../html/guanyuwangzhan.html">特别鸣谢</a></li>
+                    </ol>
+                </li>
+                <li class="sousuo">
+                    <a href="../html/sousuo.html">搜索</a>
+                    <ol class="SS">
+                        <li><a href="#">搜站内</a></li>
+                        <li><a href="#">搜站外</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+        <!-- 用户栏 -->
+        <div class="yonghu">
+            <!-- <div class="nicheng">马群</div> -->
+            <!-- 头像 -->
+            <div class="touxiang">
+                <img src="../images/touxiang02.png" width="50" height="50" />
+            </div>
+        </div>
+
+
+    </header>
+    <!-- 头部栏结束 -->
+
+    <!-- 主体内容开始 -->
+    <div class="body">
+
+        <div class="xiaohezi">
+            <div class="zuocetupian">
+                <img src="../images/chouti/01.jpg" >
+            </div>
+            <div class="youceneirong">
+                <h1>待更新</h1>
+                <p>待更新</p>
+            </div>
+        </div>
+
+        <div class="xiaohezi" id="img2">
+            <div class="zuocetupian">
+                <img src="../images/chouti/02.jpg" >
+            </div>
+            <div class="youceneirong">
+                <h1>待更新</h1>
+                <p>待更新</p>
+            </div>
+        </div>
+
+        <div class="xiaohezi">
+            <div class="zuocetupian">
+                <img src="../images/chouti/03.jpg" >
+            </div>
+            <div class="youceneirong">
+                <h1>待更新</h1>
+                <p>待更新</p>
+            </div>
+        </div>
+
+        <div class="xiaohezi">
+            <div class="zuocetupian">
+                <img src="../images/chouti/04.jpg">
+            </div>
+            <div class="youceneirong">
+                <h1>待更新</h1>
+                <p>待更新</p>
+            </div>  
+        </div>
+
+        <div class="xiaohezi">
+            <div class="zuocetupian">
+                <img src="../images/chouti/05.jpg">
+            </div>
+            <div class="youceneirong">
+                <h1>待更新</h1>
+                <p>待更新</p>
+            </div>
+        </div>
+
+        <div class="backtop">
+            <a href="#top">回到顶部</a>
+        </div>
+        <script>
+            // 回到顶部
+            var backtop = document.querySelector('.backtop');
+            var nav = document.querySelector('#img2');
+            window.onscroll = function() {
+                if (window.scrollY > nav.offsetTop) {
+                    backtop.style.display = 'block';
+                } else {
+                    backtop.style.display = 'none';
+                }
+            };
+        </script>
+    </div>
+    <!-- 主体内容结束 -->
+    <!-- 底部开始 -->
+    <div class="footer ">
+        <p>个人博客 | 版权所有 马群 | 邮箱：maqun02@qq.com</p>
+    </div>
+    <!-- 底部结束 -->
+</body>
+</html>

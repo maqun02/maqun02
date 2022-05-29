@@ -1,0 +1,346 @@
+.w{
+    width: 1400px;
+    margin: auto;
+  }
+  
+li{
+    list-style: none;
+}
+
+/* 浮动清除 */
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    /*IE6、7专有*/
+    *zoom: 1;
+}
+
+/* 头部栏开始 */
+body {
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* 头部导航栏 */
+/* flex 布局 */
+body>header{
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.63);
+    padding: 0px 40px;
+}
+
+.logo{
+    margin-left: 110px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+}
+
+nav{
+    margin: 0 auto;
+    width: 800px;
+    height: 50px;
+}
+
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul > li{
+    width: 100%;
+    height: 100%;
+}
+
+nav ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(117, 117, 117);
+}
+
+nav ul > li ol{
+    position: absolute;
+    width: 25%;
+    transform: scaleY(0);
+    transform-origin: 50% 0;
+    transition: all 0.6s;
+}
+
+ nav ul li:hover ol{
+    transform: scaleY(1);
+    transition: 0.3s;
+
+}
+
+nav ul > li ol > li{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li ol li:hover > {
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+nav ul > li ol > li > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(117, 117, 117);
+    background-color: rgba(225, 225, 225, 1);
+}
+
+nav a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    background-color: #e600ff;
+} 
+
+.nicheng{
+    float: right;
+    margin-right: 90px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.yonghu{
+    float: right;
+}
+
+.touxiang{
+    float: right;
+    margin-right: 200px;
+    width: 50px;
+    height: 50px;
+}
+
+.muoshi{
+    position: relative;
+    display: flex;
+}
+.muoshi .button1 , .muoshi .button2{
+    width: 100px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.63);
+    border: 1px solid #ccc;
+}
+.muoshi .button1{
+    position: absolute;
+    right: 5px;
+    top: -10px;
+}
+.muoshi .button2{
+    position: absolute;
+    right:5px;
+}
+/* 头部栏结束 */
+
+
+
+/* 主体内容开始 */
+.zhuti{
+    background-color:rgba(255, 255, 255, 0.315); 
+    height: 85vh;
+    /* height: fit-content; */
+    margin: 30px auto;
+}
+
+/* 左边栏 */
+.zuobian{
+    float: left;
+    width: 293px;
+    height: 85vh;
+}
+
+.zuobian h1{
+    margin-top: 50px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.zuobian h2{
+    text-align: center;
+    margin-left: 10px;
+}
+
+.wenhou{
+    margin-top: 150px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #e600ff;
+}
+/* 中间栏 */
+.zhongjian{
+    /* margin-right: 50px; */
+    padding: 10;
+    float: left;
+    width: 800px;
+    height: 85vh;
+}
+
+.tou {
+    width: 800px;
+    background-color: rgba(255, 255, 255, 0.315);
+}
+
+.tou div {
+    text-align: center;
+}
+
+.neirong{
+    width: 800px;
+    margin: 2px auto;
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 0 0 2px #ccc;
+
+}
+
+.neirong ul{
+    position: relative;
+    display: flex;
+    /* justify-content: space-around; */
+    width: 650px;
+}
+
+.neirong ul > li{
+    width: 100%;
+} 
+
+.neirong ul > li > a{
+    display: block;
+    width: 100%;
+    height: 100%; 
+     /* line-height: ; */
+}
+
+
+
+/* 右边栏 */
+.youbian{
+    font-family: 	Brush Script MT, Helvetica, sans-serif;	
+    float: right;
+    margin-top: 40px;
+    width: 300px;
+    height: 85vh;
+}
+
+.tianqi{
+    margin-left: 20px;
+    
+    height: auto;
+    width: 280px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align:left;
+}
+
+.shijan{
+    box-sizing: border-box;
+    display: flex;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-top: 40px;
+    /* max-width: fit-content; */
+    /* max-height: fit-content; */
+    padding: 0% !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    /* background: #040d21; */
+    position: relative;
+    display: block;
+flex-direction: row;}
+
+.shijiantip1, .shijiantip2{
+    font-family:STXingkai, Helvetica, sans-serif;	
+    font-size: 28px;
+    line-height: 30px;
+    color: #e600ff !important;
+}
+
+
+.padding{
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-bottom: 11%;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.padding-bottom{
+    box-sizing: border-box;
+    height: auto;
+    width: 330px;
+   
+    margin-bottom: 11%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.time-temp{
+    color:#e600ff !important;
+    box-sizing: border-box;
+    transform: translateY(-3px);
+}
+
+.time-ltemp{
+    color:#e600ff !important;
+    box-sizing: border-box;
+    transform: translateY(-3px);
+}
+
+.text {
+    box-sizing: border-box;
+    color:#e600ff!important;
+    -webkit-background-clip:text;
+    letter-spacing:0.2em;
+    display:block;
+    align-items:center;
+}
+
+
+
+/* 主体内容结束 */
+
+
+
+/* 底部开始 */
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.315);
+    height: 20px;
+    width: 100%;
+    margin: auto 1px;
+    line-height: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    color: rgb(0, 0, 0);
+
+}
+
+/* 底部结束 */

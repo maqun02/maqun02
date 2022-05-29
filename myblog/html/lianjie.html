@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马群的blog-友情链接</title>
+    <link href="../images/touxiang.png" rel="icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lianjie.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(9, 9, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <script>function BeiJing() {
+        var dd = new Date();
+        var st = document.getElementById("beijing");
+        var hour = dd.getHours();//获取当前时
+        //alert(hour);
+        if (hour > 3 && hour <= 5) {
+            document.body.style.backgroundImage = "url(../images/beijing/4-6.png)";
+        } else if (hour > 5 && hour <= 10) {
+            document.body.style.backgroundImage = "url(../images/beijing/6-11.png)";
+        } else if (hour > 10 && hour <= 12) {
+            document.body.style.backgroundImage = "url(../images/beijing/11-13.png)";
+        } else if (hour > 12 && hour <= 15) {
+            document.body.style.backgroundImage = "url(../images/beijing/13-16.png)";
+        } else if (hour > 15 && hour <= 17) {
+            document.body.style.backgroundImage = "url(../images/beijing/16-18.png)";
+        } else if (hour > 17 && hour <= 21) {
+            document.body.style.backgroundImage = "url(../images/beijing/18-22.png)";
+        } else {
+            document.body.style.backgroundImage = "url(../images/beijing/22-4.png)";
+        }
+    }
+    window.setInterval("BeiJing()", 1000);</script>
+    <!-- 头部栏开始 -->
+    <header>
+        <!-- 博客blog -->
+        <a href="../html/start.html" class="logo">
+            博客blog
+        </a>
+        <!-- 导航栏 -->
+        <nav>  
+            <ul>
+                <li><a href="../html/index.html">首页</a></li>
+                <li><a href="../html/liuyanban.html">留言板</a></li>
+                <li>
+                    <a href="../html/guanyuwangzhan.html">关于网站</a>
+                    <ol>
+                        <li><a href="../html/guanyuwangzhan.html">制作目的</a></li>
+                        <li><a href="../html/guanyuwangzhan.html">制作过程</a></li>
+                        <li><a href="../html/guanyuwangzhan.html">日后用途</a></li>
+                        <li><a href="../html/guanyuwangzhan.html">特别鸣谢</a></li>
+                    </ol>
+                </li>
+                <li class="sousuo">
+                    <a href="../html/sousuo.html">搜索</a>
+                    <ol class="SS">
+                        <li><a href="#">搜站内</a></li>
+                        <li><a href="#">搜站外</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+        <!-- 用户栏 -->
+        <div class="yonghu">
+            <!-- <div class="nicheng">马群</div> -->
+            <!-- 头像 -->
+            <div class="touxiang">
+                <img src="../images/touxiang02.png" width="50" height="50" />
+            </div>
+        </div>
+
+        
+    </header>
+    <!-- 头部栏结束 -->
+
+    <!-- 主体内容开始 -->
+    <div class="neirong">
+        <div class="container">
+            <div class="card">
+                <div class="miaoshu">北方工业大学</div>
+                <div class="content">
+                    
+                    <h3>北方工业大学是我的在读校<br>欢迎大家访问</h3>
+                    <a href="http://www.ncut.edu.cn/" target="_blank">转到</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="miaoshu">B站</div>
+                <div class="content">
+                    
+                    <h3>欢迎大家来到<br>哔哩哔哩学习</h3>
+                    <a href="https://www.bilibili.com/" target="_blank">转到</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="miaoshu">Git<br>Hub</div>
+                <div class="content">
+                    
+                    <h3>程序员学习<br>不必不可少的地方</h3>
+                    <a href="https://github.com/" target="_blank">转到</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="miaoshu">百度</div>
+                <div class="content">
+                    
+                    <h3>有问题找度娘<br>万能的搜索引擎</h3>
+                    <a href="https://www.baidu.com/" target="_blank">转到</a>
+                </div>
+        </div>
+    </div>
+    <!-- 主体内容结束 -->
+    <!-- 底部开始 -->
+    <div class="footer ">
+        <p>个人博客 | 版权所有 马群 | 邮箱：maqun02@qq.com</p>
+    </div>
+     <!-- 底部结束 -->
+</body>
+
+</html>

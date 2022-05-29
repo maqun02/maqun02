@@ -1,0 +1,141 @@
+.Neirong {
+    display: flex;
+    height: 95vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.Neirong .kuang {
+    display: flex;
+    position: relative;
+    width: 700px;
+    height: 400px;
+    border: #fff 1px solid;
+    border-radius: 20px;
+    background:linear-gradient(117.13586214365887deg, rgba(149, 168, 181, 0.523) 5.23042380495524%,rgba(61, 72, 78, 0.507) 97.28277142234296%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Neirong .kuang .zi{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 0;
+    margin: 75px 50px;
+    transition: 1s;
+}
+
+.Neirong .kuang .zi a{
+    text-emphasis: none;
+    color: #fff;
+    font:900 20px/1.5 'Microsoft YaHei';
+}
+
+.Neirong .kuang .zi h2{
+    /* 鼠标放开时的动画
+    第一个是动画的过渡时间
+    第2个是延迟1秒后执行动画 */
+    transition: .5s 1s;
+    opacity: 0;
+    color: rgb(30, 210, 200);
+}
+
+.Neirong .kuang .zi span{
+    position: absolute;
+    top: 70px;
+    transition: .5s 1s;
+    font: 500 15px/1.5 'Microsoft YaHei';
+    color:#fff;
+}
+
+.Neirong .kuang .donghua{
+    position: absolute;
+    top: -110px;
+    left: 851px;
+    width: 100px;
+    height: 100px;
+   
+}
+
+.dh1,.dh2{
+    position: absolute;
+    right: calc(var(--i) * 100px);
+    width: calc(var(--w) * 40px);
+    height: 500px;
+    overflow: hidden;
+    border-radius: 100px;
+    transform: rotate(220deg) translate(0, 0);
+    background: rgba(240, 220, 150, 1);
+    transition: 1s;
+}
+
+.dh1:nth-child(2){
+    background: rgb(240, 190, 250);
+}
+
+.dh2{
+    position: absolute;
+    left: -316px;
+    top: -199px;
+    width: 70px;
+    background-color: rgb(90, 220, 150);
+}
+
+.kuang:hover .donghua div{
+   transition: .5s calc(var(--i) * .1s);
+    transform: rotate(220deg) translate(-200px ,400px);
+}
+
+.kuang:hover .zi{
+    transition: 1s .5s;
+    left: 370px;
+}
+
+.kuang:hover .zi h2{
+    transition: 1s .5s;
+    opacity: 1;
+}
+
+.kuang:hover .zi span{
+    transition: 1s .5s;
+    top:105px
+}
+
+.erweimaq{
+    position: absolute;
+    top: 65px;
+    left: 120px;
+    width: 200px;
+    height: 260px;
+    background-image: url("../images/qq.jpg");
+    background-size: cover;
+    opacity: 0;
+    transition: 2s;
+}
+
+.kuang:hover .erweimaq{
+    opacity: 1;
+    transition: 1s;
+}
+
+.erweimaw{
+    position: absolute;
+    top: 65px;
+    left: 120px;
+    width: 200px;
+    height: 260px;
+    background-image: url("../images/wx.jpg");
+    background-size: cover;
+    opacity: 0;
+    transition: 2s;
+}
+
+.kuang:hover .erweimaw{
+    opacity: 1;
+    transition: 1s;
+}

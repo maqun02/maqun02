@@ -1,0 +1,99 @@
+.flex{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.inner{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.315);;
+    padding: 10px 10px;
+    margin-top: 30px;
+}
+
+.tijiao{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: hsl(0deg 0% 100%);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.item{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    flex-direction: column;
+}
+
+.item h3{
+    display: block;
+    width: 50px;
+    height: auto;
+    background-color: white;
+}
+textarea {
+    resize: none;
+    width: 450px;
+    height: 150px;
+}
+
+textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 2px  #ddd solid;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: #000;
+    line-height: 50px;
+}
+  
+textarea:focus {
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.pinglun{
+    
+    border-top: aquamarine solid 2px;
+    margin-top: 10px;
+    width: 1000px;
+    height: auto;  
+    line-heitoght: 50px;
+    font-size: 20px;
+    color: #333;
+    border-top: 1px solid #ccc;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.pinglun li{
+    text-align: left;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 50px;
+    line-height: 50px;
+    background-color: beige;
+    overflow: auto;
+}
+
+.pinglun li a{
+    float: right;
+    margin-right: 5px;
+    line-height:50px;
+}

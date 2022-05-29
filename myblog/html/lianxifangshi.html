@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马群的blog-联系方式</title>
+    <link href="../images/touxiang.png" rel="icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lianxifangshi.css">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(9, 9, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <script >function BeiJing() {
+        var dd = new Date();
+        var st = document.getElementById("beijing");
+        var hour = dd.getHours();//获取当前时
+        //alert(hour);
+        if (hour > 3 && hour <= 5) {
+            document.body.style.backgroundImage = "url(../images/beijing/4-6.png)";
+        } else if (hour > 5 && hour <= 10) {
+            document.body.style.backgroundImage = "url(../images/beijing/6-11.png)";
+        } else if (hour > 10 && hour <= 12) {
+            document.body.style.backgroundImage = "url(../images/beijing/11-13.png)";
+        } else if (hour > 12 && hour <= 15) {
+            document.body.style.backgroundImage = "url(../images/beijing/13-16.png)";
+        } else if (hour > 15 && hour <= 17) {
+            document.body.style.backgroundImage = "url(../images/beijing/16-18.png)";
+        } else if (hour > 17 && hour <= 21) {
+            document.body.style.backgroundImage = "url(../images/beijing/18-22.png)";
+        } else {
+            document.body.style.backgroundImage = "url(../images/beijing/22-4.png)";
+        }
+    }
+    window.setInterval("BeiJing()", 1000);</script>
+    <!-- 头部栏开始 -->
+    <header>
+        <!-- 博客blog -->
+        <a href="../html/start.html" class="logo">
+            博客blog
+        </a>
+        <!-- 导航栏 -->
+        <nav>  
+            <ul>
+                <li><a href="../html/index.html">首页</a></li>
+                <li><a href="../html/liuyanban.html">留言板</a></li>
+                <li>
+                    <a href="../html/guanyuwangzhan.html">关于网站</a>
+                    <ol>
+                        <li><a href="../html/guanyuwangzhan.html">制作目的</a></li>
+                        <li><a href="../html/guanyuwangzhan.html">制作过程</a></li>
+                        <li><a href="../html/guanyuwangzhan.html">日后用途</a></li>
+                        <li><a href="../html/guanyuwangzhan.html">特别鸣谢</a></li>
+                    </ol>
+                </li>
+                <li class="sousuo">
+                    <a href="../html/sousuo.html">搜索</a>
+                    <ol class="SS">
+                        <li><a href="#">搜站内</a></li>
+                        <li><a href="#">搜站外</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+        <!-- 用户栏 -->
+        <div class="yonghu">
+            <!-- <div class="nicheng">马群</div> -->
+            <!-- 头像 -->
+            <div class="touxiang">
+                <img src="../images/touxiang02.png" width="50" height="50" />
+            </div>
+        </div>
+
+        
+    </header>
+    <!-- 头部栏结束 -->
+
+    <!-- 主体内容开始 -->
+<div class="zh" style="display:flex;justify-content: space-around;">
+    <div class="Neirong">
+        <div class="kuang">
+            <div class="zi">
+                <a href="../html/index.html">马群的blog<br>QQ</a>
+                <h2>QQ:2221219700</h2>
+                <span>I'm a student whose learn front-end ,<br>I'm learning newknowledge every day toshare with you,<br>
+                    I hope in the days to comeKeep going!
+                </span>
+            </div>
+            <div class="donghua">
+                <!-- i是用来计算平面圆柱的动效延迟和距离,W则是用来计算圆柱的宽度 -->
+                <div class="dh1" style="--i:1;--w:1.5"></div>
+                <div class="dh1" style="--i:2;--w:1.6"></div>
+                <div class="dh1" style="--i:3;--w:1.4"></div>
+                <div class="dh1" style="--i:4;--w:1.7"></div>
+                <div class="dh2" style="--i:1;"></div>
+            </div>
+            <!-- 添加二维码 -->
+            <div class="erweimaq"></div>
+        </div>
+    </div>
+
+    <div class="Neirong">
+        <div class="kuang">
+            <div class="zi">
+                <a href="../html/index.html">马群的blog<br>微信</a>
+                <h2>WX:wxmaqun02</h2>
+                
+                <span>I'm a student whose learn front-end ,<br>I'm learning newknowledge every day toshare with you,<br>
+                    I hope in the days to comeKeep going!!!
+                </span>
+            </div>
+            <div class="donghua">
+                <!-- i是用来计算平面圆柱的动效延迟和距离,W则是用来计算圆柱的宽度 -->
+                <div class="dh1" style="--i:1;--w:1.5"></div>
+                <div class="dh1" style="--i:2;--w:1.6"></div>
+                <div class="dh1" style="--i:3;--w:1.4"></div>
+                <div class="dh1" style="--i:4;--w:1.7"></div>
+                <div class="dh2" style="--i:1;"></div>
+            </div>
+            <!-- 添加二维码 -->
+            <div class="erweimaw"></div>
+    </div>
+</div>
+    <!-- 主体内容结束 -->
+    <!-- 底部开始 -->
+    <div class="footer ">
+        <p>个人博客 | 版权所有 马群 | 邮箱：maqun02@qq.com</p>
+    </div>
+     <!-- 底部结束 -->
+</body>
+
+</html>

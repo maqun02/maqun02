@@ -1,0 +1,93 @@
+.neirong{
+    all: initial;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.315); */
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 500px;
+    background:linear-gradient(117.13586214365887deg, rgba(248, 198, 215, 0.632) 5.23042380495524%,rgba(175, 233, 249, 0.653) 97.28277142234296%);
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #ccc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blue(5px);
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container .card .miaoshu{
+    text-align: center;
+    width: 60px;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.container .card:hover .miaoshu{
+    display: none;
+    
+}
+
+.container .card .content h2{
+    position: absolute;
+    top: -170px;
+    right: -11px;
+    font-size: 130px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.container .card .content h3{
+    font-size: 30px;
+    color: #fff;
+}
+
+.container .card .content p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    margin: 10px 0 15px 0;
+}
+
+.container .card .content a{
+    position: relative;
+    display:inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.2);
+}
